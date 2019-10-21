@@ -1,22 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import './App.css';
+import data from './data.json'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Movie Searcher</h2>
+      <input className="movie-search"/>
+      <section className="movie-list">
+        {data.map(item => {
+          return (
+            <div className="movie">
+              <div className="movie-title">{item.Title}</div>
+              <div className="movie-year">{item.Year}</div>
+              <div className="movie-genre">{item.Genre}</div>
+              <img className="movie-img" src={item.Poster}/>
+            </div>
+          )
+        })}
+      </section>
     </div>
   );
 }
