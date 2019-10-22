@@ -1,7 +1,7 @@
 [
   {
     "imdbID": "tt3896198",
-    "Title": "Guardians of the Galaxy Vol. 2",
+    "Title": "Guardians of the Galaxy 2",
     "Year": "2017",
     "Rated": "PG-13",
     "Released": "05 May 2017",
@@ -69,7 +69,7 @@
   },
   {
     "imdbID": "tt0121766",
-    "Title": "Star Wars: Episode III - Revenge of the Sith",
+    "Title": "Star Wars: Episode III",
     "Year": "2005",
     "Rated": "PG-13",
     "Released": "19 May 2005",
@@ -137,7 +137,7 @@
   },
   {
     "imdbID": "tt0120737",
-    "Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Title": "LOTR: Fellowship",
     "Year": "2001",
     "Rated": "PG-13",
     "Released": "19 Dec 2001",
