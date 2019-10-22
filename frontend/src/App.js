@@ -2,12 +2,17 @@ import React, {useState, useEffect } from 'react';
 import './App.scss';
 import movieData from './movies.json'
 import quotesData from './quotes.json'
+import Modal from 'react-modal';
 
 const App = () => {
+  const [isCreateModalOpen, toggleCreateModal] = useState(false);
+  const [isViewModalOpen, toggleViewModal] = useState(false);
+
   return (
     <div className="App">
       <h2>Movie Searcher</h2>
-      <input className="movie-search"/>
+      {/* <input className="movie-search"/> */}
+      <button className="add-new">+ Add New Movie</button>
       <div className="movie-list">
         {movieData.map(movie => {
           return (
@@ -27,6 +32,7 @@ const App = () => {
                     }
                   })}
                 </ul>
+                <button className="show-movie">Show more</button>
               </section>
             </div>
           )
