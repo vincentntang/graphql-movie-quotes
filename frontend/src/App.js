@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from 'react';
 import './App.css';
-import data from './data.json'
+import movieData from './movies.json'
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <h2>Movie Searcher</h2>
       <input className="movie-search"/>
       <section className="movie-list">
-        {data.map(item => {
+        {movieData.map(item => {
           return (
             <div className="movie">
               <div className="movie-title">{item.Title}</div>
