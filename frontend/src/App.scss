@@ -33,17 +33,27 @@ body {
   padding: 5px;
   border-radius: 3px;
   outline: none;
-  font-size: 10px;
+  a {
+    text-decoration:none;
+    font-size: 12px;
+    :hover {
+      color: black;
+    }
+  }
 }
-.movie {
+.movie-item {
   /* box-sizing: border-box;
   width: 100%; */
   display: flex;
   justify-content: center;
   text-align: left;
   margin-top: 1rem;
+  h3 {
+    margin-top: 0px;
+  }
   img {
     width: 150px;
+    height: 100%;
     margin-right: 3rem;
   }
   section {

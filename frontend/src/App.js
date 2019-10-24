@@ -1,44 +1,25 @@
 import React, {useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
-import movieData from './movies.json'
-import quotesData from './quotes.json'
-import Modal from 'react-modal';
+// Components
+import {Movie} from './components/Movie';
+import {MovieCreate} from "./components/MovieCreate";
+import {MovieList} from "./components/MovieList";
+import {Navbar} from './components/Navbar';
 
 const App = () => {
-  const [isCreateModalOpen, toggleCreateModal] = useState(false);
-  const [isViewModalOpen, toggleViewModal] = useState(false);
 
   return (
-    <div className="App">
-      <h2>Movie Searcher</h2>
-      {/* <input className="movie-search"/> */}
-      <button className="add-new">+ Add New Movie</button>
-      <div className="movie-list">
-        {movieData.map(movie => {
-          return (
-            <div className="movie">
-              <img src={movie.Poster}/>
-              <section>
-                <h3>{movie.Title}</h3>
-                <p>{movie.Year}</p>                
-                <ul>
-                  {quotesData.map(quote => {
-                    if(quote.imdbID === movie.imdbID){
-                      return (
-                        <li key={quote.imdbID}>
-                          {quote.description}
-                        </li>
-                      )
-                    }
-                  })}
-                </ul>
-                <button className="show-movie">Show more</button>
-              </section>
-            </div>
-          )
-        })}
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <Switch>
+          <Route exact path="/" component={MovieList}/>
+          <Route exact path="/movie/create" component={MovieCreate}/>
+          <Route path="/movie/:movieId" component={Movie}/>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 
