@@ -3,11 +3,9 @@ import {Link} from "react-router-dom"
 
 export const Navbar = (props) =>{
   return (
-    <div>
-      <Link to={`/`}><h2>Movie Quotes</h2></Link>
-      <button className="add-new">
-        <Link to={`/movie/create`}>+ Add New Movie</Link>
-      </button>
+    <div className="navbar">
+      <Link className="title" to={`/`}>Movie Quotes</Link>
+      <Link className="btn-add-new" to={`/movie/create`}>+ Add New Movie</Link>
     </div>
   )
 }

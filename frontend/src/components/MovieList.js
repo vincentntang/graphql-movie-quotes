@@ -24,9 +24,7 @@ export const MovieList = (props) => {
                   }
                 })}
               </ul>
-              <button className="show-movie">
-                <Link to={`/movie/${movie.imdbID}`}>Movie Details</Link>
-              </button>
+              <Link className="btn-show-movie" to={`/movie/${movie.imdbID}`}>Movie Details</Link>
             </section>
           </div>
         )
