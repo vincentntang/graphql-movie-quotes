@@ -5,7 +5,7 @@ export const MovieCreate = (props) =>{
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
   const onSubmit = event => {
-    alert(`${description} ${title} ${year}`);
+    alert(`Title: ${title} \n\n Year: ${year} \n\n Description: ${description}`);
     event.preventDefault();
   }
   return (
