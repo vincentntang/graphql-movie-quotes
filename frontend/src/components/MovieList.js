@@ -17,16 +17,16 @@ export const MovieList = (props) => {
                 <p>{movie.year}</p>
                 <ul>
                   {quotesData.map(quote => {
-                    if (quote.imdbId === movie.imdbId) {
+                    if (quote.movie_id === movie.movie_id) {
                       return (
-                        <li key={quote.imdbId}>
+                        <li key={quote.movie_id}>
                           {quote.description}
                         </li>
                       )
                     }
                   })}
                 </ul>
-                <Link className="btn-normal" to={`/movie/${movie.imdbId}`}>Movie Details</Link>
+                <Link className="btn-normal" to={`/movie/${movie.movie_id}`}>Movie Details</Link>
               </section>
             </div>
           )
