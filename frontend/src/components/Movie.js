@@ -24,8 +24,6 @@ export const Movie = (props) =>{
           })}
         </ul>
         <p>PLOT: {filteredMovie.Plot}</p>
-        <p>RATED: {filteredMovie.Rated}</p>
-        <p>RUNTIME: {filteredMovie.Runtime}</p>
       </section>
     </div>
   )
