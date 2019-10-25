@@ -1,22 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export const MovieCreate = (props) =>{
+  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState('');
+  const [year, setYear] = useState('');
   return (
     <div className="movie-create">
       <form>
-        <input type="text"/>
-        <input type="text"/>
-        <input type="text"/>
-        {/* TODO - Format the code here */}
-        {/* TODO - When you click submit, show an alert that does nothing. 
-        Push back to the original location route as well. In the backend
-        console log the result and show what's supposed to return
-        show network tab as well 
-        fork branch, create backend
-        branch master - finished project w/ sequelize deploy to heroku
-        branch 01 - starter - starting part
-        branch 02 - fullstack but no database
-        branch 03 - deployed, sequelize (same as master) */}
+        <label>Title</label>
+        <input
+          type="text"
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <label>Year</label>
+        <input
+          type="text"
+          onChange={(e) => setYear(e.target.value)} 
+        />
+        <label>Description</label>
+        <textarea 
+          type="text" 
+          onChange={(e) => setYear(e.target.value)}
+        />
+        <button className="btn-normal" type="submit">Submit</button>
       </form>
     </div>
   )
