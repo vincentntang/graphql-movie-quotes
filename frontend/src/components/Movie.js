@@ -7,7 +7,7 @@ export const Movie = (props) =>{
   const filteredMovie = movieData.find(x=> x.imdbID === movieId)
   const quotes = quotesData.filter(y => y.imdbID === movieId)
   return (
-    <div className="movie-item">
+    <div className="movie-item single-movie">
       <img src={filteredMovie.Poster} />
       <section>
         <h3>{filteredMovie.Title}</h3>

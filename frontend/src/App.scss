@@ -12,10 +12,21 @@ a {
   margin-bottom: 0.5rem;
   font-size: 2rem;
   color: white;
-}
-.navbar {
   text-align: center;
-  margin-bottom: 3rem;
+}
+.movie-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.movie-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > a {
+    width: auto;
+  }
 }
 /* BUTTON AND LINKS */
 .btn-add-new {
@@ -60,10 +71,14 @@ a {
     text-align:left;
   }
 }
+.single-movie {
+  margin-top: 4rem !important;
+}
 /* FORM ITSELF */
 .movie-create {
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
   label {
     font-size: 20px;
   }
