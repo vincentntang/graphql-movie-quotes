@@ -4,19 +4,39 @@ const moviesData = JSON.parse(fs.readFileSync('./data/movies.json', 'utf8'))
 const quotesData = JSON.parse(fs.readFileSync('./data/quotes.json', 'utf8'))
 
 const resolvers = {
+  Mutation: {
+    createMovie:(_,{input}) => {
+      // let result = db.movies.create({...input})
+      // return result
+      input.movie_id = Math.random().toString(36).substring(7); // random string
+      return input;
+    }
+  },
   Query: {
-    movies: () => moviesData,
-    // movie: (_, {movie_id}) => moviesData.find(x.id=>)
+    movies: () => {
+      return moviesData
+    },
+    movie: (_, {movie_id}) => {
+      return moviesData.find(x => x.movie_id === movie_id)
+    }
+  },
+  Movie: {
+    quotes: (movie) => {
+      return quotesData.filter(y => y.movie_id === movie.movie_id)
+    }
   }
 }
 
 const typeDefs = gql`
+  type Mutation {
+    createMovie(input: MovieInput): Movie
+  }
   type Query {
-    movies: [movie]
-    movie(movie_id: ID): movie
+    movies: [Movie]
+    movie(movie_id: ID): Movie
   }
 
-  type movie {
+  type Movie {
     movie_id: ID,
     title: String,
     year: String,
@@ -24,12 +44,18 @@ const typeDefs = gql`
     poster: String,
     rated: String,
     runtime: String,
-    quotes: [quote],
+    quotes: [Quote],
   }
 
-  type quote {
+  type Quote {
     quote_id: ID,
     description: String,
+  }
+
+  input MovieInput {
+    title: String,
+    year: String,
+    plot: String,
   }
 `;
 
