@@ -4,26 +4,26 @@ import quotesData from '../data/quotes.json';
 
 export const Movie = (props) =>{
   const {movieId} = props.match.params; //windows
-  const filteredMovie = movieData.find(x=> x.imdbID === movieId)
-  const quotes = quotesData.filter(y => y.imdbID === movieId)
+  const filteredMovie = movieData.find(x=> x.imdbId === movieId)
+  const quotes = quotesData.filter(y => y.imdbId === movieId)
   return (
     <div className="movie-item single-movie">
-      <img src={filteredMovie.Poster} />
+      <img src={filteredMovie.poster} />
       <section>
-        <h3>{filteredMovie.Title}</h3>
-        <p>{filteredMovie.Year}</p>
+        <h3>{filteredMovie.title}</h3>
+        <p>{filteredMovie.year}</p>
         <ul>
           {quotes.map(quote => {
-            if (quote.imdbID === filteredMovie.imdbID) {
+            if (quote.imdbId === filteredMovie.imdbId) {
               return (
-                <li key={quote.imdbID}>
+                <li key={quote.imdbId}>
                   {quote.description}
                 </li>
               )
             }
           })}
         </ul>
-        <p>PLOT: {filteredMovie.Plot}</p>
+        <p>PLOT: {filteredMovie.plot}</p>
       </section>
     </div>
   )

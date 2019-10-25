@@ -7,3 +7,5 @@ cd frontend
 npm install
 npm run start
 ```
+
+This branch is a frontend only example

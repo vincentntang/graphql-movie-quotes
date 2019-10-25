@@ -11,22 +11,22 @@ export const MovieList = (props) => {
         {movieData.map(movie => {
           return (
             <div className="movie-item">
-              <img src={movie.Poster} />
+              <img src={movie.poster} />
               <section>
-                <h3>{movie.Title}</h3>
-                <p>{movie.Year}</p>
+                <h3>{movie.title}</h3>
+                <p>{movie.year}</p>
                 <ul>
                   {quotesData.map(quote => {
-                    if (quote.imdbID === movie.imdbID) {
+                    if (quote.imdbId === movie.imdbId) {
                       return (
-                        <li key={quote.imdbID}>
+                        <li key={quote.imdbId}>
                           {quote.description}
                         </li>
                       )
                     }
                   })}
                 </ul>
-                <Link className="btn-normal" to={`/movie/${movie.imdbID}`}>Movie Details</Link>
+                <Link className="btn-normal" to={`/movie/${movie.imdbId}`}>Movie Details</Link>
               </section>
             </div>
           )
