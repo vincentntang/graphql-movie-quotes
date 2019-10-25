@@ -1,6 +1,6 @@
 [
   {
-    "imdbId": "tt3896198",
+    "movie_id": "tt3896198",
     "title": "Guardians of the Galaxy 2",
     "year": "2017",
     "plot": "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.",
@@ -9,7 +9,7 @@
     "runtime": "136 min"
   },
   {
-    "imdbId": "tt0468569",
+    "movie_id": "tt0468569",
     "title": "The Dark Knight",
     "year": "2008",
     "plot": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
@@ -18,7 +18,7 @@
     "runtime": "152 min"
   },
   {
-    "imdbId": "tt0088763",
+    "movie_id": "tt0088763",
     "title": "Back to the Future",
     "year": "1985",
     "plot": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
@@ -27,7 +27,7 @@
     "runtime": "116 min"
   },
   {
-    "imdbId": "tt0133093",
+    "movie_id": "tt0133093",
     "title": "The Matrix",
     "year": "1999",
     "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
@@ -36,7 +36,7 @@
     "runtime": "136 min"
   },
   {
-    "imdbId": "tt0121766",
+    "movie_id": "tt0121766",
     "title": "Star Wars: Episode III",
     "year": "2005",
     "plot": "Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy.",
@@ -45,7 +45,7 @@
     "runtime": "140 min"
   },
   {
-    "imdbId": "tt0120762",
+    "movie_id": "tt0120762",
     "title": "Mulan",
     "year": "1998",
     "plot": "To save her father from death in the army, a young maiden secretly goes in his place and becomes one of China's greatest heroines in the process.",
@@ -54,7 +54,7 @@
     "runtime": "88 min"
   },
   {
-    "imdbId": "tt0110357",
+    "movie_id": "tt0110357",
     "title": "The Lion King",
     "year": "1994",
     "plot": "A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his father's death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities.",
@@ -63,7 +63,7 @@
     "runtime": "88 min"
   },
   {
-    "imdbId": "tt0120338",
+    "movie_id": "tt0120338",
     "title": "Titanic",
     "year": "1997",
     "plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
@@ -72,7 +72,7 @@
     "runtime": "194 min"
   },
   {
-    "imdbId": "tt0120737",
+    "movie_id": "tt0120737",
     "title": "LOTR: Fellowship",
     "year": "2001",
     "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
@@ -81,7 +81,7 @@
     "runtime": "178 min"
   },
   {
-    "imdbId": "tt0418279",
+    "movie_id": "tt0418279",
     "title": "Transformers",
     "year": "2007",
     "plot": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",

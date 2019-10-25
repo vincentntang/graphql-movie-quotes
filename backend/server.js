@@ -1,25 +1,40 @@
 const { ApolloServer, gql } = require('apollo-server');
-const typeDefs = require('./schema');
+const fs = require('fs')
+const moviesData = JSON.parse(fs.readFileSync('./data/movies.json', 'utf8'))
+const quotesData = JSON.parse(fs.readFileSync('./data/quotes.json', 'utf8'))
+
+const resolvers = {
+  Query: {
+    movies: () => moviesData,
+    // movie: (_, {movie_id}) => moviesData.find(x.id=>)
+  }
+}
 
 const typeDefs = gql`
   type Query {
-    movies: [movie];
+    movies: [movie]
     movie(movie_id: ID): movie
-    quotes: [quote]: quote;
-    quote: quote;
   }
 
   type movie {
-    imdbId: ID,
+    movie_id: ID,
     title: String,
     year: String,
     plot: String,
+    poster: String,
+    rated: String,
+    runtime: String,
+    quotes: [quote],
   }
 
   type quote {
-    quotesID: ID,
+    quote_id: ID,
     description: String,
   }
 `;
 
-const server = new ApolloServer({ typeDefs });
+const server = new ApolloServer({ typeDefs,resolvers });
+
+server.listen().then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
+});
