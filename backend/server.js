@@ -11,13 +11,14 @@ const typeDefs = gql`
 
   type movie {
     imdbId: ID,
-    Title: String,
-    Year: String,
-    Plot: String,
+    title: String,
+    year: String,
+    plot: String,
   }
 
   type quote {
     quotesID: ID,
+    description: String,
   }
 `;
 
