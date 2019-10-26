@@ -23,7 +23,7 @@ npm install
 npm run start
 ```
 
-Install backend and run
+In a seperate terminal, install backend and run
 
 ```
 cd backend
