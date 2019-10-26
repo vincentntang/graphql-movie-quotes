@@ -1,0 +1,92 @@
+[
+  {
+    "movie_id": "tt3896198",
+    "title": "Guardians of the Galaxy 2",
+    "year": "2017",
+    "plot": "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "runtime": "136 min"
+  },
+  {
+    "movie_id": "tt0468569",
+    "title": "The Dark Knight",
+    "year": "2008",
+    "plot": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "runtime": "152 min"
+  },
+  {
+    "movie_id": "tt0088763",
+    "title": "Back to the Future",
+    "year": "1985",
+    "plot": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "rated": "PG",
+    "runtime": "116 min"
+  },
+  {
+    "movie_id": "tt0133093",
+    "title": "The Matrix",
+    "year": "1999",
+    "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "rated": "R",
+    "runtime": "136 min"
+  },
+  {
+    "movie_id": "tt0121766",
+    "title": "Star Wars: Episode III",
+    "year": "2005",
+    "plot": "Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "runtime": "140 min"
+  },
+  {
+    "movie_id": "tt0120762",
+    "title": "Mulan",
+    "year": "1998",
+    "plot": "To save her father from death in the army, a young maiden secretly goes in his place and becomes one of China's greatest heroines in the process.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODkxNGQ1NWYtNzg0Ny00Yjg3LThmZTItMjE2YjhmZTQ0ODY5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "rated": "G",
+    "runtime": "88 min"
+  },
+  {
+    "movie_id": "tt0110357",
+    "title": "The Lion King",
+    "year": "1994",
+    "plot": "A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his father's death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg",
+    "rated": "G",
+    "runtime": "88 min"
+  },
+  {
+    "movie_id": "tt0120338",
+    "title": "Titanic",
+    "year": "1997",
+    "plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "runtime": "194 min"
+  },
+  {
+    "movie_id": "tt0120737",
+    "title": "LOTR: Fellowship",
+    "year": "2001",
+    "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "runtime": "178 min"
+  },
+  {
+    "movie_id": "tt0418279",
+    "title": "Transformers",
+    "year": "2007",
+    "plot": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDg1NTU2OWEtM2UzYi00ZWRmLWEwMTktZWNjYWQ1NWM1OThjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "runtime": "144 min"
+  }
+]
