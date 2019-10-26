@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { gql } from 'apollo-boost';
 import { useMutation } from '@apollo/react-hooks';
+import Swal from 'sweetalert2'
 
 const ADD_MOVIE = gql`
   mutation CreateMovie($input: MovieInput!) {
@@ -17,11 +18,14 @@ export const MovieCreate = () =>{
   // Mutation
   const [addMovie] = useMutation(ADD_MOVIE, {
     onCompleted(data){
-      alert(`
-        ID: ${data.createMovie.movie_id} \n
-        Title: ${data.createMovie.title}
-        Year: ${data.createMovie.year}
-        Plot: ${data.createMovie.plot}`);
+      Swal.fire({
+        type: 'success',
+        html: `
+         <h2>ID: ${data.createMovie.movie_id}</h2>
+         <p>Title: ${data.createMovie.title}</p>
+         <p>Year: ${data.createMovie.year}</p>
+         <p>Plot: ${data.createMovie.plot}</p>`
+      })
     }
   });
 
