@@ -1,3 +1,16 @@
+## Slides
+
+Please see my slidedeck for an overview of what GraphQL is, before 
+going through the demo
+
+https://slides.com/vincentntang/fullstack-graphql-nodejs-react#/
+
+## Component Architecture
+
+1. MovieList - A list of all movies are shown
+2. MovieCreate - Create movie form
+3. Movie - A detailed movie item
+
 ## Quickstart
 
 To install this repo, install the frontend and run
@@ -16,36 +29,11 @@ npm install
 npm run start
 ```
 
-## Installation steps from the very beginning
-
-```
-npm install -g create-react-app
-npx create-react-app frontend
-cd ..
-mkdir backend
-cd backend
-npm init
-npm install apollo-server graphql
-```
-
-Create the `server.js` file with typedef and resolvers
-
-```
-npm run start
-```
-
-navigate to `localhost:4000/graphql` to see the playground
-
-to connect the frontend with graphql
-```
-cd frontend
-npm install apollo-boost @apollo/react-hooks graphql
-# https://www.apollographql.com/docs/react/get-started/
-```
-
-add the apollo-client to frontend
-
 ## Sample Queries/Mutation
+
+Once the backend is running, go to:
+
+`localhost:4000/graphql` and try running these queries/mutations
 
 #### Query a list of movies + their quotes
 ```
