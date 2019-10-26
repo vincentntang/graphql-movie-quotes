@@ -1,13 +1,15 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
-export const MovieCreate = (props) =>{
+export const MovieCreate = () =>{
   const [description, setDescription] = useState('');
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
+
   const onSubmit = event => {
     alert(`Title: ${title} \n\n Year: ${year} \n\n Description: ${description}`);
     event.preventDefault();
   }
+
   return (
     <div className="movie-create">
       <form onSubmit={onSubmit}>
@@ -31,8 +33,3 @@ export const MovieCreate = (props) =>{
     </div>
   )
 }
-
-
-// useEffect(() => {
-//   console.log(description, title, year);
-// });

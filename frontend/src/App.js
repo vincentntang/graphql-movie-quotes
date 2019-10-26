@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
@@ -12,7 +12,6 @@ const client = new ApolloClient({
 });
 
 const App = () => {
-
   return (
     <ApolloProvider client={client}>
       <Router>

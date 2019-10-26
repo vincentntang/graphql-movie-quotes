@@ -1,6 +1,4 @@
 import React from 'react'
-import movieData from '../data/movies.json';
-import quotesData from '../data/quotes.json';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
 
@@ -27,6 +25,7 @@ export const Movie = (props) =>{
   });
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error ...</p>
+
   return (
     <div className="movie-item single-movie">
       <img src={data.movie.poster} />

@@ -1,4 +1,4 @@
-import React, {Fragment}from 'react'
+import React from 'react'
 import {Link} from "react-router-dom"
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
@@ -19,10 +19,11 @@ const GET_MOVIES = gql`
   }
 `;
 
-export const MovieList = (props) => {
+export const MovieList = () => {
   const {loading, error, data} = useQuery(GET_MOVIES);
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error ...</p>
+
   return (
     <div className="movie-wrapper">
       <Link className="btn-add-new" to={`/movie/create`}>+ Add New Movie</Link>
