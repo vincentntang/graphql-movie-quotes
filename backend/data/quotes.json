@@ -5,69 +5,29 @@
     "description": "Showtime!"
   },
   {
-    "quote_id": "SJRAZDu_z",
-    "movie_id": "tt3896198",
-    "description": "Well, that’s intense."
-  },
-  {
     "quote_id": "rkz1GwOOM",
     "movie_id": "tt0468569",
     "description": "I'm Batman"
   },
   {
-    "quote_id": "BJxRekLIS",
+    "quote_id": "rkz1GwOAS",
     "movie_id": "tt0468569",
-    "description": "Some men just want to watch the world burn."
-  },
-  {
-    "quote_id": "ryWF-18LS",
-    "movie_id": "tt0088763",
-    "description": "Hey, Doc"
-  },
-  {
-    "quote_id": "SyEBz1ILS",
-    "movie_id": "tt0133093",
-    "description": "We need guns. Lots of guns."
-  },
-  {
-    "quote_id": "HJaLfyIIr",
-    "movie_id": "tt0133093",
-    "description": "Take the blue pill"
+    "description": "Why so serious?"
   },
   {
     "quote_id": "H1vd_D8Ur",
-    "movie_id": "tt0121766",
-    "description": "You were the chosen one!"
+    "movie_id": "tt0086190",
+    "description": "It's a trap!"
   },
   {
     "quote_id": "Bk5JaDIIH",
-    "movie_id": "tt0121766",
-    "description": "I have the high ground."
+    "movie_id": "tt0086190",
+    "description": "I'm a Jedi, like my father before me."
   },
   {
     "quote_id": "Bk5JaDIIB",
-    "movie_id": "tt0121766",
-    "description": "Destroy the Sith, we must."
-  },
-  {
-    "quote_id": "Bk5JaDIIA",
-    "movie_id": "tt0120762",
-    "description": "Did you see those Huns?"
-  },
-  {
-    "quote_id": "BykmM_LLH",
-    "movie_id": "tt0110357",
-    "description": "Long live the King..."
-  },
-  {
-    "quote_id": "SJD_4OIUr",
-    "movie_id": "tt0110357",
-    "description": "Hakuna matata!"
-  },
-  {
-    "quote_id": "BkPAVuILB",
-    "movie_id": "tt0120338",
-    "description": "Where to, Miss?"
+    "movie_id": "tt0086190",
+    "description": "May the Force be with you."
   },
   {
     "quote_id": "r1x7UdLUr",
@@ -76,7 +36,7 @@
   },
   {
     "quote_id": "H1vE5O8UB",
-    "movie_id": "tt0418279",
-    "description": "Autobots Roll Out!"
+    "movie_id": "tt0120737",
+    "description": "Not all those who wander are lost."
   }
 ]
