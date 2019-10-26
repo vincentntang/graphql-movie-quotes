@@ -1,13 +1,43 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { gql } from 'apollo-boost';
+import { useMutation } from '@apollo/react-hooks';
+
+const ADD_MOVIE = gql`
+  mutation CreateMovie($input: MovieInput!) {
+    createMovie(input: $input) {
+      movie_id
+      title
+      year
+      plot
+    }
+  }
+`;
 
 export const MovieCreate = () =>{
-  const [description, setDescription] = useState('');
+  // Mutation
+  const [addMovie] = useMutation(ADD_MOVIE, {
+    onCompleted(data){
+      alert(`
+        ID: ${data.createMovie.movie_id} \n
+        Title: ${data.createMovie.title}
+        Year: ${data.createMovie.year}
+        Plot: ${data.createMovie.plot}`);
+    }
+  });
+
+  // Form Logic
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
-
+  const [plot, setPlot] = useState('');
   const onSubmit = event => {
-    alert(`Title: ${title} \n\n Year: ${year} \n\n Description: ${description}`);
     event.preventDefault();
+    addMovie({variables: {
+      input: {
+        title: title,
+        year: year,
+        plot: plot,
+      }
+    }});
   }
 
   return (
@@ -23,10 +53,10 @@ export const MovieCreate = () =>{
           type="text"
           onChange={(e) => setYear(e.target.value)} 
         />
-        <label>Description</label>
+        <label>Plot</label>
         <textarea 
           type="text" 
-          onChange={(e) => setDescription(e.target.value)}
+          onChange={(e) => setPlot(e.target.value)}
         />
         <button className="btn-normal" type="submit">Submit</button>
       </form>
