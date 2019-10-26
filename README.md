@@ -15,6 +15,12 @@ https://slides.com/vincentntang/fullstack-graphql-nodejs-react#/
 
 ## Quickstart
 
+Globally install these dependencies anywhere
+
+```
+npm install -g nodemon
+```
+
 To install this repo, install the frontend and run
 
 ```
