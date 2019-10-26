@@ -1,12 +1,19 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
+import Swal from 'sweetalert2'
 
-export const MovieCreate = (props) =>{
-  const [description, setDescription] = useState('');
+export const MovieCreate = () =>{
+  const [plot, setPlot] = useState('');
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
   const onSubmit = event => {
-    alert(`Title: ${title} \n\n Year: ${year} \n\n Description: ${description}`);
     event.preventDefault();
+    Swal.fire({
+      type: 'success',
+      html: `
+       <p>Title: ${title}</p>
+       <p>Year: ${year}</p>
+       <p>Plot: ${plot}</p>`
+    })
   }
   return (
     <div className="movie-create">
@@ -21,18 +28,13 @@ export const MovieCreate = (props) =>{
           type="text"
           onChange={(e) => setYear(e.target.value)} 
         />
-        <label>Description</label>
+        <label>Plot</label>
         <textarea 
           type="text" 
-          onChange={(e) => setDescription(e.target.value)}
+          onChange={(e) => setPlot(e.target.value)}
         />
         <button className="btn-normal" type="submit">Submit</button>
       </form>
     </div>
   )
 }
-
-
-// useEffect(() => {
-//   console.log(description, title, year);
-// });

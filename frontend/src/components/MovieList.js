@@ -1,9 +1,9 @@
-import React, {Fragment}from 'react'
+import React from 'react'
 import {Link} from "react-router-dom"
 import movieData from '../data/movies.json'
 import quotesData from '../data/quotes.json'
 
-export const MovieList = (props) => {
+export const MovieList = () => {
   return (
     <div className="movie-wrapper">
       <Link className="btn-add-new" to={`/movie/create`}>+ Add New Movie</Link>
@@ -19,7 +19,7 @@ export const MovieList = (props) => {
                   {quotesData.map(quote => {
                     if (quote.movie_id === movie.movie_id) {
                       return (
-                        <li key={quote.movie_id}>
+                        <li key={quote.quote_id}>
                           {quote.description}
                         </li>
                       )

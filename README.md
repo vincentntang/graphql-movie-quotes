@@ -1,3 +1,18 @@
+![](https://i.imgur.com/4q3305b.png)
+
+## Slides
+
+Please see my slidedeck for an overview of what GraphQL is, before 
+going through the demo
+
+https://slides.com/vincentntang/fullstack-graphql-nodejs-react#/
+
+## Component Architecture
+
+1. MovieList - A list of all movies are shown
+2. MovieCreate - Create movie form
+3. Movie - A detailed movie item
+
 ## Quickstart
 
 To install this repo, install the frontend and run
@@ -8,7 +23,7 @@ npm install
 npm run start
 ```
 
-Install backend and run
+In a seperate terminal, install backend and run
 
 ```
 cd backend
@@ -16,59 +31,21 @@ npm install
 npm run start
 ```
 
-## Installation steps from the very beginning
+## Sample Queries/Mutation
 
-```
-npm install -g create-react-app
-npx create-react-app frontend
-cd ..
-mkdir backend
-cd backend
-npm init
-npm install apollo-server graphql
-```
+Once the backend is running, go to:
 
-Create the `server.js` file:
+`localhost:4000/graphql` and try running these queries/mutations
 
-```
-npm run start
-```
-
-navigate to `localhost:4000/graphql` to see the playground
-
-## Sample Queries
-
-Grab list of movies
+#### Query a list of movies + their quotes
 ```
 query {
   movies {
+    movie_id
     title
-  	year
+    year
     plot
-  }
-}
-```
-
-Grab a specific movie
-```
-query {
-  movie(movie_id: "tt0468569") {
-    title
-  	year
-    plot
-  }
-}
-```
-
-## Sample Queries with Object Resolvers
-
-Grab a list of movies, and all their respective quotes
-```
-query {
-  movies {
-    title
-  	year
-    plot
+    poster
     quotes {
       quote_id
       description
@@ -77,9 +54,30 @@ query {
 }
 ```
 
-## Sample Mutation with Input Object
+#### Query a specific movie + their quotes
+```
+query Movie($movie_id: ID){
+  movie(movie_id: $movie_id) {
+    title
+    year
+    plot
+    poster
+    quotes {
+      quote_id
+      description
+    }
+  }
+}
+```
+Query variables
+```
+{
+  "movie_id": "tt0468569"
+}
+```
 
-Create a movie with a list of variables
+#### Mutation - Create a movie with a list of inputs
+
 ```
 mutation CreateMovie($input: MovieInput!) {
   createMovie(input: $input) {
@@ -90,7 +88,7 @@ mutation CreateMovie($input: MovieInput!) {
   }
 }
 ```
-Variables
+Query Variables
 ```
 {
   "input": {

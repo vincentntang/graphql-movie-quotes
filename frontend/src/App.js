@@ -1,6 +1,5 @@
 import React, {useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import './App.scss';
 // Components
 import {Movie} from './components/Movie';
 import {MovieCreate} from "./components/MovieCreate";

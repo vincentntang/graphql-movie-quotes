@@ -35,7 +35,6 @@ const typeDefs = gql`
     movies: [Movie]
     movie(movie_id: ID): Movie
   }
-
   type Movie {
     movie_id: ID,
     title: String,
@@ -46,12 +45,10 @@ const typeDefs = gql`
     runtime: String,
     quotes: [Quote],
   }
-
   type Quote {
     quote_id: ID,
     description: String,
   }
-
   input MovieInput {
     title: String,
     year: String,

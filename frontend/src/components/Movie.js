@@ -16,7 +16,7 @@ export const Movie = (props) =>{
           {quotes.map(quote => {
             if (quote.movie_id === filteredMovie.movie_id) {
               return (
-                <li key={quote.movie_id}>
+                <li key={quote.quote_id}>
                   {quote.description}
                 </li>
               )
