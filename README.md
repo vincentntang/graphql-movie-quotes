@@ -15,9 +15,9 @@ https://slides.com/vincentntang/fullstack-graphql-nodejs-react#/
 
 ## Branch structure
 
-1. 01-frontend-only -> only has the frontend, starting point of demo
-2. 02-frontend-backend-graphql -> same frontend, but finished standalone backend
-3. 03-connected-frontend-backend -> same as master, fullstack integration
+* 01-frontend-only -> only has the frontend, starting point of demo
+* 02-frontend-backend-graphql -> same frontend, but finished standalone backend
+* 03-connected-frontend-backend -> same as master, fullstack integration
 
 ## Quickstart
 
