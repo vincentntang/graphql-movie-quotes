@@ -1,3 +1,5 @@
+![](https://i.imgur.com/4q3305b.png)
+
 ## Slides
 
 Please see my slidedeck for an overview of what GraphQL is, before 
